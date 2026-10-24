@@ -136,3 +136,27 @@ footer {
         padding: 24px;
     }
 }
+
+
+/* Header layout fix */
+header {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .brand {
+    margin: 0;
+    flex: 0 0 auto;
+}
+
+header nav {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex: 0 0 auto;
+}
+
