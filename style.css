@@ -22,10 +22,11 @@ body {
     color: var(--color-text);
     font-family: Georgia, "Times New Roman", serif;
     line-height: 1.7;
+    padding-top: 76px;
 }
 
 header {
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 1000;
 
