@@ -137,3 +137,69 @@ footer {
         padding: 24px;
     }
 }
+
+
+/* Hygge & Spark — hero section */
+
+.hero {
+    min-height: 520px;
+    padding: 72px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 16px;
+    overflow: hidden;
+
+    background-image:
+        linear-gradient(
+            rgba(25, 38, 30, 0.42),
+            rgba(25, 38, 30, 0.42)
+        ),
+        url("https://images.pexels.com/photos/31437628/pexels-photo-31437628.jpeg");
+
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.hero h1 {
+    max-width: 700px;
+    font-size: clamp(2.8rem, 7vw, 5rem);
+    line-height: 1.08;
+    font-weight: normal;
+    letter-spacing: -0.04em;
+}
+
+.hero p {
+    max-width: 560px;
+}
+
+.hero > p:first-child {
+    font-family: Arial, sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
+.hero > a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 13px 24px;
+    border-radius: 30px;
+    background-color: #f7f5ef;
+    color: #303b32;
+    transition: background-color 0.2s ease;
+}
+
+.hero > a:hover {
+    background-color: #e8e8dc;
+}
+
+@media (max-width: 600px) {
+    .hero {
+        min-height: 440px;
+        padding: 28px;
+    }
+}
+
