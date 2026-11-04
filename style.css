@@ -99,6 +99,11 @@ section p {
     max-width: 650px;
 }
 
+.about-intro p,
+.about-quote p {
+    max-width: none;
+}
+
 #ambience {
     padding: 48px;
     background-color: var(--color-muted);
@@ -213,6 +218,7 @@ footer {
 }
 
 .about-intro {
+    width: 100%;
     text-align: center;
     margin-bottom: 70px;
 }
@@ -224,11 +230,18 @@ footer {
     color: #8b927f;
 }
 
+.about-intro .section-label {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .about-intro h2 {
     font-size: clamp(2rem, 4vw, 3rem);
     font-weight: normal;
-    color: #303b32;
-    margin-top: 15px;
+    color: var(--color-text);
+    margin: 15px auto 0;
+    text-align: center;
 }
 
 .about-content {
@@ -272,15 +285,23 @@ footer {
     text-align: center;
     background-color: #eeeee7;
     border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .about-quote p {
+    width: 100%;
+    max-width: none;
     font-family: Georgia, serif;
     font-size: clamp(1.5rem, 3vw, 2.2rem);
     font-style: italic;
     line-height: 1.5;
     color: #39453a;
     margin: 0 0 25px;
+    text-align: center;
 }
 
 .about-quote span {
