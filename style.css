@@ -147,6 +147,24 @@ section p {
     font-style: italic;
 }
 
+
+/* YOUTUBE CHANNEL BUTTON */
+
+.channel-button {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 30px;
+    background-color: var(--color-accent);
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.channel-button:hover {
+    background-color: var(--color-text);
+}
+
+
 .video-section {
     margin: 0 auto 65px;
     max-width: 900px;
